@@ -36,9 +36,7 @@
     	<remap from="/joint_states" to="/vbmbot/joint_states" />
     </node> 
     
-    <!-- <node name="controller_service_node" pkg="vision_based_manipulation" type="vbmbot_joint_controller_service.py" output="screen" />      
-    <node name="manager_node" pkg="vision_based_manipulation" type="manager_client.py" output="screen" /> -->
-    <node name="controller_node" pkg="vision_based_manipulation" type="vbmbot_joint_controller.py" output="screen" /> 
+    <node name="controller_node" pkg="vision_based_manipulation" type="vbmbot_joint_controller.py" output="screen" />
     
 
 </launch>
