@@ -1,0 +1,5 @@
+# computer generated files
+vbm_ws/build/
+vbm_ws/devel/
+
+.vscode*
