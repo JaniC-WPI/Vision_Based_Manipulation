@@ -15,4 +15,4 @@ Run this project by launching the following -
 -- Node publishes joint position first and switches controller to publish joint velocity
 
 `roslaunch vision_based_manipulation vb_manager.launch`
--- server node waits for manager's numeric input, to publish joint positions and move from home position to target, and then switches controller to publish random joint velocities
+-- server node has the controller. Manager nodes send a numeric input that asks the controller to wait (input 1), to start (input 2) or to stop (input 3). The arm position is in the home position. The server node receives the start command from manager, and the position controller changes the joint position to a target position. After the switchcontroller service is called in the server node that switches the controller from position to velcity and the velocity command are published to randonly move the arm 
