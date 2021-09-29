@@ -25,10 +25,10 @@ find_package(Boost REQUIRED COMPONENTS system)
  #  FILES
  #)
 ## Generate services in the 'srv' folder
- add_service_files(
-  FILES
-  ctrl_srv_command.srv  
-)
+#add_service_files(
+ # FILES
+ #ctrl_srv_command.srv  
+#)
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
