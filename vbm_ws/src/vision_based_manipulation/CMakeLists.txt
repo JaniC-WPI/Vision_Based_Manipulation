@@ -25,10 +25,6 @@ find_package(Boost REQUIRED COMPONENTS system)
  #  FILES
  #)
 ## Generate services in the 'srv' folder
-#add_service_files(
- # FILES
- #ctrl_srv_command.srv  
-#)
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
@@ -53,8 +49,6 @@ include_directories(
 
 catkin_install_python(PROGRAMS
    scripts/vbmbot_joint_controller.py
-   scripts/vbmbot_joint_controller_service.py
-   scripts/manager_client.py
    
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
