@@ -52,9 +52,6 @@ include_directories(
 )
 
 catkin_install_python(PROGRAMS
-   scripts/vbmbot_joint_controller.py
-   scripts/vbmbot_joint_controller_service.py
-   scripts/manager_client.py
-   
+   scripts/vbmbot_joint_controller.py   
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
